@@ -31,7 +31,7 @@ display: block;
 NAVBAR
 ===================== */
 header {
-background: #111;
+background: #F0E4D8;
 }
 
 
@@ -237,4 +237,5 @@ font-size: 2rem;
 flex-direction: column;
 gap: 0.5rem;
 }
+
 }
