@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<li><a href="women.html">Women</a></li>
+<li><a href="kids.html">Kids</a></li>
+<li><a href="cart.html">Cart 🛒</a></li>
+<li><a href="contact.html" class="active">Contact</a></li>
+</ul>
+</nav>
+</header>
+
+
+<!-- ================= PAGE HEADER ================= -->
+<section class="page-header" style="background:#111; color:#fff; padding:3rem 2rem; text-align:center;">
+<h1>Contact Us</h1>
+<p>We’d love to hear from you. Get in touch with Jejak Shoes.</p>
+</section>
+
+
+<!-- ================= CONTACT FORM ================= -->
+<section style="padding:4rem 2rem; max-width:700px; margin:auto;">
+
+
+<form id="contactForm" onsubmit="return validateContactForm()" style="background:#fff; padding:2rem; border-radius:10px; box-shadow:0 4px 10px rgba(0,0,0,0.1);">
+
+
+<label>Name</label><br>
+<input type="text" id="name" placeholder="Your full name" style="width:100%; padding:0.75rem; margin-bottom:1rem;">
+
+
+<label>Email</label><br>
+<input type="email" id="email" placeholder="example@email.com" style="width:100%; padding:0.75rem; margin-bottom:1rem;">
+
+
+<label>Message</label><br>
+<textarea id="message" rows="5" placeholder="Your message" style="width:100%; padding:0.75rem; margin-bottom:1.5rem;"></textarea>
+
+
+<button type="submit" class="btn">Send Message</button>
+</form>
+
+
+</section>
+
+
+<!-- ================= FOOTER ================= -->
+<footer>
+<div class="footer-content">
+<p>&copy; 2026 Jejak Shoes. All Rights Reserved.</p>
+</div>
+</footer>
+
+
+<!-- ================= JAVASCRIPT ================= -->
+<script src="js/script.js"></script>
+
+
+<script>
+function validateContactForm() {
+const name = document.getElementById('name').value.trim();
+const email = document.getElementById('email').value.trim();
+const message = document.getElementById('message').value.trim();
+
+
+if (name === '' || email === '' || message === '') {
+alert('Please fill in all fields before submitting.');
+return false;
+}
+
+
+alert('Thank you for contacting Jejak Shoes! We will get back to you soon.');
+document.getElementById('contactForm').reset();
+return false; // prevent actual submission (mock project)
+}
+</script>
+
+
+</body>
+</html>
