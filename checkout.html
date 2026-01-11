@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Checkout | Jejak Shoes</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header>
+    <nav class="navbar">
+        <div class="logo">Jejak Shoes</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="cart.html">Cart</a></li>
+            <li><a href="checkout.html" class="active">Checkout</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section style="padding:4rem; max-width:600px; margin:auto;">
+    <h2>Payment Method</h2>
+
+    <form onsubmit="processPayment(); return false;">
+        <label>
+            <input type="radio" name="payment" required>
+            Online Banking
+        </label><br><br>
+
+        <label>
+            <input type="radio" name="payment">
+            Credit / Debit Card
+        </label><br><br>
+
+        <label>
+            <input type="radio" name="payment">
+            E-Wallet (Touch ‘n Go / GrabPay)
+        </label><br><br>
+
+        <button class="btn">Pay Now</button>
+    </form>
+</section>
+
+<script src="js/script.js"></script>
+</body>
+</html>
