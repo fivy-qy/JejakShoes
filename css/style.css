@@ -76,7 +76,7 @@ HERO SECTION
 ===================== */
 .hero {
 background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
-url('../images/banner/men.jpg') center/cover no-repeat;
+url('../images/banner/aesthetic.jpg') center/cover no-repeat;
 height: 70vh;
 display: flex;
 align-items: center;
@@ -239,6 +239,7 @@ gap: 0.5rem;
 }
 
 }
+
 
 
 
