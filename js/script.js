@@ -55,9 +55,10 @@ function displayCart() {
 
 // Remove item from cart
 function removeItem(index) {
-cart.splice(index, 1);
-localStorage.setItem("cart", JSON.stringify(cart));
-displayCart();
+  let cart = JSON.parse(localStorage.getItem("cart")) || [];
+  cart.splice(index, 1);
+  localStorage.setItem("cart", JSON.stringify(cart));
+  displayCart();
 }
 
 
@@ -154,4 +155,5 @@ document.querySelectorAll(".product-card").forEach(card => {
     alert("Added to cart!");
   });
 });
+
 
