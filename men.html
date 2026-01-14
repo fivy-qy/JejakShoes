@@ -5,85 +5,133 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Men Shoes | Jejak Shoes</title>
 
-
-<!-- Google Fonts -->
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
-
-
-<!-- CSS -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-
-<!-- ================= NAVBAR ================= -->
-<header>
-<nav class="navbar">
-<div class="logo">Jejak Shoes</div>
-<ul class="nav-links">
-<li><a href="index.html">Home</a></li>
-<li><a href="men.html" class="active">Men</a></li>
-<li><a href="women.html">Women</a></li>
-<li><a href="kids.html">Kids</a></li>
-<li><a href="cart.html">Cart 🛒</a></li>
-</ul>
-</nav>
+<!-- NAVBAR -->
+<header class="navbar">
+  <div class="logo">Jejak Shoes</div>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="men.html" class="active">Men</a></li>
+    <li><a href="women.html">Women</a></li>
+    <li><a href="kids.html">Kids</a></li>
+    <li><a href="cart.html">Cart 🛒</a></li>
+  </ul>
 </header>
 
-
-<!-- ================= PAGE HEADER ================= -->
-<section class="page-header" style="background:#704214; color:#fff; padding:3rem 2rem; text-align:center;">
-<h1>Men's Collection</h1>
-<p>Stylish, durable, and comfortable shoes for every step.</p>
+<!-- PAGE HEADER -->
+<section class="page-header">
+  <h1>Men’s Collection</h1>
+  <p>Comfort-driven footwear for everyday journeys.</p>
 </section>
 
+<!-- PRODUCTS -->
+<section class="products">
+  <div class="product-container">
 
-<!-- ================= PRODUCT LIST ================= -->
-<section class="featured">
-<div class="product-container">
+    <!-- SHOE 1 -->
+    <div class="product-card">
+      <img src="images/men/shoe1.jpg" alt="Thong Sandals">
 
+      <h3>Thong Sandals</h3>
+      <p class="price">RM129</p>
 
-<div class="product-card">
-<img src="images/men/shoe1.jpg" alt="Thong Sandals Men Shoe">
-<h3>Thong Sandals</h3>
-<p>RM129.00</p>
-<button class="btn-small" onclick="addToCart('Thong Sandals', 129)">Add to Cart</button>
-</div>
+      <!-- SIZE -->
+      <label>Shoe Size (UK)</label>
+      <select class="size-select">
+        <option value="">Select Size</option>
+        <option value="UK 6">UK 6</option>
+        <option value="UK 7">UK 7</option>
+        <option value="UK 8">UK 8</option>
+        <option value="UK 9">UK 9</option>
+      </select>
 
+      <!-- QUANTITY -->
+      <div class="qty-box">
+        <button class="qty-btn minus">−</button>
+        <input type="number" class="qty-input" value="1" min="1">
+        <button class="qty-btn plus">+</button>
+      </div>
 
-<div class="product-card">
-<img src="images/men/slideSandals.jpg" alt="Slide Sandals Men Shoe">
-<h3>Slide Sandals</h3>
-<p>RM159.00</p>
-<button class="btn-small" onclick="addToCart('Slide Sandals', 159)">Add to Cart</button>
-</div>
+      <button class="add-to-cart"
+        data-name="Thong Sandals"
+        data-price="129">
+        Add to Cart
+      </button>
+    </div>
 
+    <!-- SHOE 2 -->
+    <div class="product-card">
+      <img src="images/men/shoe2.jpg" alt="Slide Sandals">
 
-<div class="product-card">
-<img src="images/men/strapSandals.jpg" alt="Strap Sandals Men Shoe">
-<h3>Strap Sandals</h3>
-<p>RM179.00</p>
-<button class="btn-small" onclick="addToCart('Strap Sandals', 179)">Add to Cart</button>
-</div>
+      <h3>Slide Sandals</h3>
+      <p class="price">RM159</p>
 
+      <label>Shoe Size (UK)</label>
+      <select class="size-select">
+        <option value="">Select Size</option>
+        <option value="UK 7">UK 7</option>
+        <option value="UK 8">UK 8</option>
+        <option value="UK 9">UK 9</option>
+        <option value="UK 10">UK 10</option>
+      </select>
 
-</div>
+      <div class="qty-box">
+        <button class="qty-btn minus">−</button>
+        <input type="number" class="qty-input" value="1" min="1">
+        <button class="qty-btn plus">+</button>
+      </div>
+
+      <button class="add-to-cart"
+        data-name="Slide Sandals"
+        data-price="159">
+        Add to Cart
+      </button>
+    </div>
+
+    <!-- SHOE 3 -->
+    <div class="product-card">
+      <img src="images/men/shoe3.jpg" alt="Strap Sandals">
+
+      <h3>Strap Sandals</h3>
+      <p class="price">RM179</p>
+
+      <label>Shoe Size (UK)</label>
+      <select class="size-select">
+        <option value="">Select Size</option>
+        <option value="UK 6">UK 6</option>
+        <option value="UK 8">UK 8</option>
+        <option value="UK 9">UK 9</option>
+        <option value="UK 10">UK 10</option>
+      </select>
+
+      <div class="qty-box">
+        <button class="qty-btn minus">−</button>
+        <input type="number" class="qty-input" value="1" min="1">
+        <button class="qty-btn plus">+</button>
+      </div>
+
+      <button class="add-to-cart"
+        data-name="Strap Sandals"
+        data-price="179">
+        Add to Cart
+      </button>
+    </div>
+
+  </div>
 </section>
 
-
-<!-- ================= FOOTER ================= -->
 <footer>
-<div class="footer-content">
-<p>&copy; 2026 Jejak Shoes. All Rights Reserved.</p>
-</div>
+  <p>&copy; 2026 Jejak Shoes. All Rights Reserved.</p>
 </footer>
 
-
-<!-- ================= JAVASCRIPT ================= -->
 <script src="js/script.js"></script>
 </body>
-
 </html>
+
 
 
 
