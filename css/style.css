@@ -241,7 +241,8 @@ gap: 0.5rem;
 }
  /* Social Media */
 .social i {
-  font-size: 30px; 
+  font-size: 30px;
+  color: #fff;
   transition: transform 0.3s, color 0.3s; /* Smooth effect */
 }
 
