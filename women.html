@@ -39,36 +39,101 @@
 
 
 <!-- ================= PRODUCT LIST ================= -->
-<section class="featured">
-<div class="product-container">
+<section class="products">
+  <div class="product-container">
 
+    <!-- PRODUCT 1 -->
+    <div class="product-card">
+      <img src="images/women/sandals.jpg" alt="Sandals Women Shoe">
 
-<div class="product-card">
-<img src="images/women/sandals.jpg" alt="Sandals Women Shoe">
-<h3>Sandals</h3>
-<p>RM129.00</p>
-<button class="btn-small" onclick="addToCart('Sandals', 129)">Add to Cart</button>
-</div>
+      <h3>Sandals</h3>
+      <p class="price">RM129</p>
 
+      <!-- SIZE -->
+      <label>Shoe Size (UK)</label>
+      <select class="size-select">
+        <option value="">Select Size</option>
+        <option value="UK 4">UK 4</option>
+        <option value="UK 5">UK 5</option>
+        <option value="UK 6">UK 6</option>
+        <option value="UK 7">UK 7</option>
+      </select>
 
-<div class="product-card">
-<img src="images/women/slipOn.jpg" alt="Slip-On Women Shoe">
-<h3>Slip-On</h3>
-<p>RM159.00</p>
-<button class="btn-small" onclick="addToCart('Slip-On', 159)">Add to Cart</button>
-</div>
+      <!-- QUANTITY -->
+      <div class="qty-box">
+        <button class="qty-btn minus">−</button>
+        <input type="number" class="qty-input" value="1" min="1">
+        <button class="qty-btn plus">+</button>
+      </div>
 
+      <button class="add-to-cart"
+        data-name="Sandals"
+        data-price="129">
+        Add to Cart
+      </button>
+    </div>
 
-<div class="product-card">
-<img src="images/women/flats.jpg" alt="Flats Women Shoe">
-<h3>Flats</h3>
-<p>RM179.00</p>
-<button class="btn-small" onclick="addToCart('Flats', 179)">Add to Cart</button>
-</div>
+    <!-- PRODUCT 2 -->
+    <div class="product-card">
+      <img src="images/women/slipOn.jpg" alt="Slip-On Women Shoe">
 
+      <h3>Slip-On</h3>
+      <p class="price">RM159</p>
 
-</div>
+      <label>Shoe Size (UK)</label>
+      <select class="size-select">
+        <option value="">Select Size</option>
+        <option value="UK 5">UK 5</option>
+        <option value="UK 6">UK 6</option>
+        <option value="UK 7">UK 7</option>
+        <option value="UK 8">UK 8</option>
+      </select>
+
+      <div class="qty-box">
+        <button class="qty-btn minus">−</button>
+        <input type="number" class="qty-input" value="1" min="1">
+        <button class="qty-btn plus">+</button>
+      </div>
+
+      <button class="add-to-cart"
+        data-name="Slip-On"
+        data-price="159">
+        Add to Cart
+      </button>
+    </div>
+
+    <!-- PRODUCT 3 -->
+    <div class="product-card">
+      <img src="images/women/flats.jpg" alt="Flats Women Shoe">
+
+      <h3>Flats</h3>
+      <p class="price">RM179</p>
+
+      <label>Shoe Size (UK)</label>
+      <select class="size-select">
+        <option value="">Select Size</option>
+        <option value="UK 4">UK 4</option>
+        <option value="UK 5">UK 5</option>
+        <option value="UK 6">UK 6</option>
+        <option value="UK 7">UK 7</option>
+      </select>
+
+      <div class="qty-box">
+        <button class="qty-btn minus">−</button>
+        <input type="number" class="qty-input" value="1" min="1">
+        <button class="qty-btn plus">+</button>
+      </div>
+
+      <button class="add-to-cart"
+        data-name="Flats"
+        data-price="179">
+        Add to Cart
+      </button>
+    </div>
+
+  </div>
 </section>
+
 
 
 <!-- ================= FOOTER ================= -->
@@ -84,5 +149,6 @@
 </body>
 
 </html>
+
 
 
